@@ -1,6 +1,6 @@
 import Icon from '@/components/ui/icon';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import ContactForm from './ContactForm';
 
 const About = () => {
   const scrollToContact = () => {
@@ -94,65 +94,7 @@ const About = () => {
               Запросите коммерческое предложение с расчётом CIF или закажите бесплатные образцы для тестирования
             </p>
             
-            <div className="bg-white rounded-xl p-6 lg:p-8 text-left max-w-lg mx-auto">
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Ваше имя *
-                  </label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 rounded-lg border border-input focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                    placeholder="Иван Иванов"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Компания
-                  </label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 rounded-lg border border-input focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                    placeholder="ТОО Название"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Телефон / WhatsApp *
-                  </label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 rounded-lg border border-input focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                    placeholder="+7 (___) ___-__-__"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Email
-                  </label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 rounded-lg border border-input focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                    placeholder="email@example.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Что вас интересует? *
-                  </label>
-                  <select className="w-full px-4 py-3 rounded-lg border border-input focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
-                    <option>Запросить прайс-лист CIF</option>
-                    <option>Заказать образцы</option>
-                    <option>Получить консультацию</option>
-                    <option>Обсудить партнёрство</option>
-                  </select>
-                </div>
-                <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 text-white">
-                  Отправить запрос
-                  <Icon name="Send" className="ml-2" size={20} />
-                </Button>
-              </form>
-            </div>
+            <ContactForm />
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-blue-50">
               <div className="flex items-center gap-2">
